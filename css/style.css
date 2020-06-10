@@ -42,6 +42,8 @@ a.navbar-brand{
 a.navbar-brand sup{
 	width: 5px;
 	height: 7px;
+	top: -25px;
+    right: -70px;
 	font-family:'HK Grotesk';
 	font-size: 6px;
 	font-weight: 600;
@@ -51,6 +53,10 @@ a.navbar-brand sup{
 	letter-spacing: normal;
 	color: #000000;
 }
+a.navbar-brand .voice-matter sup{
+	top: -8px;
+    right: 0;
+} 
 
 .navbar-brand span{
 	font-family: 'Oswald', sans-serif;
