@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+    <defs>
+        <circle id="a" cx="18" cy="18" r="18"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#FFB744" xlink:href="#a"/>
+        <text fill="#FFF" font-family="MuseoSansCyrl-700, Museo Sans Cyrl" font-size="12" font-weight="500" letter-spacing=".267" mask="url(#b)">
+            <tspan x="14" y="22">N</tspan>
+        </text>
+    </g>
+</svg>
