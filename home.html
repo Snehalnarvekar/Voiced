@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Voiced</title>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-        <link href="//db.onlinewebfonts.com/c/03fb56501793dc7f72a44b15e84c716c?family=Museo+Sans+Cyrl+500" rel="stylesheet" type="text/css"/>
-        <link href="//db.onlinewebfonts.com/c/9897812c6013649bd7a0c3d2efb4c834?family=HK+Grotesk" rel="stylesheet" type="text/css"/>    
+        <!-- <link href="//db.onlinewebfonts.com/c/03fb56501793dc7f72a44b15e84c716c?family=Museo+Sans+Cyrl+300" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/9897812c6013649bd7a0c3d2efb4c834?family=HK+Grotesk" rel="stylesheet" type="text/css"/>     -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.0-0/collection/components/icon/icon.min.css">
@@ -15,11 +15,13 @@
     </head>
 
     <body>
-        <div class="header_wrapper"> 
+        <div class="header_wrapper menu_wrap"> 
             <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light ">
+                <nav class="navbar navbar-expand-md">
                     <a class="navbar-brand" href="#">
+                    <h4>
                         VOICED<sup>®</sup>
+                    </h4>
                         <span class="voice-matter">
                         EVERY VOICE MATTERS<sup>®</sup></span>
                     </a>
@@ -31,27 +33,73 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
                                         <form class="form-inline" action="">
-                                            <input class="form-control form-control-sm" type="text" placeholder="Search voiced"
-                                            aria-label="Search">
+                                            <input class="form-control form-control-sm" type="text" placeholder="Search voiced" aria-label="Search">
                                             <img src="images/search.svg" class="Search">
                                         </form>
                                     </a>    
                                 </li>
                                 <li class="nav-item">  
                                     <a class="nav-link" href="#">
-                                        <i class="icon ion-ios-plus-empty"></i>Create Story
+                                        <i class="fa fa-plus"></i>Create Story
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#"><img src="images/news.svg" class="news">
-                                        Newsfeed
-                                    </a>
+                                        Newsfeed</a> 
                                 </li>  
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img src="images/notif.svg" class="Notif">
-                                            <span class="badge badge-info">16</span>
+                                        <span class="badge">16</span>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                            <div class="card-top">
+                                                <h5 class="card-title">Notifications</h5>
+                                            </div>
+                                        <li class="notification-box">
+                                            <div class="row">
+                                              <div class="left">
+                                                <img src="images/like.svg" alt="voiced" class="bg-primary">
+                                              </div>    
+                                              <div class="right">
+                                                <p>
+                                                5 new likes on your story<bold class="text"><q>36 Ways You Know You’re a True Tennessean</q></bold>
+                                                </p>
+                                                <p class="check_out"><a> Check it now</a></p>
+                                              </div>    
+                                            </div>
+                                        </li>
+                                        <li class="notification-box">
+                                        <div class="row">
+                                            <div class="left">
+                                            <img src="./images/png/avatar.png" alt="voiced" >
+                                            </div>    
+                                            <div class="right">
+                                            <p>
+                                                <bold class="text">Lynsey Free</bold> commented on your story<bold class="text"><q>36 Ways You Know You’re a True…</q></bold>
+                                                <i><q>Wow cool story, I like it</q></i>
+                                            </p>
+                                            </div>    
+                                        </div>
+                                        </li>
+                                        <li class="notification-box">
+                                        <div class="row">
+                                            <div class="left">
+                                            <img src="./images/png/avatar-copy.png" alt="voiced">
+                                            </div>    
+                                            <div class="right">
+                                            <p>
+                                            <bold class="text">Sam Smith</bold> is now following you!
+                                            </p>
+                                            <p class="check_out"><a>Follow back</a></p>
+                                            </div>    
+                                        </div>
+                                        </li>
+                                        <li class="card-footer">
+                                        <a href="" class="show-more">Show all notifications</a>
+                                        </li>
+                                    </ul>
+
                                 </li>           
                             </ul>
                             <div class="dropdown profile-icon">
@@ -59,7 +107,6 @@
                                     <img src="images/avatar.png" alt="">
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
                                 </div>
                             </div>
                         </div>                     
@@ -67,14 +114,13 @@
             </div> 
         </div>
 
-        <div class="card_wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
+        <div class="page-contents">
+            <div class="container"> 
+                    <div class="row">
                         <div class="leftcolumn">
                             <div class="card">
                                 <div class="card-top">
-                                    <h6 class="card-title">Topics</h6>
+                                    <h5 class="card-title">Topics</h5>
                                     <div class="topics-wrap">
                                         <ul >
                                             <li>
@@ -118,7 +164,7 @@
                             </div>
                             <div class="card">
                                 <div class="card-top">
-                                    <h6 class="card-title">Trending</h6>
+                                    <h5 class="card-title">Trending</h5>
                                     <div class="topics-wrap trend-wrap">
                                         <ul >
                                             <li><a>#Lifestyle</a><br>
@@ -151,17 +197,21 @@
 
                         <div class="middlecolumn">
                             <div class="card">
-                                <div class="list-group">
-                                    <div class="list-group-item" >
-                                        <img src="" alt="">
-                                    </div>
+                                <span >Up to 300 symbols</span>
+                                <div class="col-md-9 col-sm-9">
+
+                                        <div class="form-group">
+                                            <input name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="What’s on your mind?">
+                                        </div>
+
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="rightcolumn">
                             <div class="card">
                                 <div class="card-top">
-                                    <h6 class="card-title">Follow</h6>
+                                    <h5 class="card-title">Follow</h5>
                                     <div class="voiced_wrap">
                                         <ul>
                                             <li>
@@ -199,37 +249,41 @@
                                     <a href="" class="show-more">Show more voices to follow</a>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-top">
-                                    <h6 class="card-title">From Voicedmarket</h6>
+                            <div class="product-card">   
                                     <div class="product">
-                                        <ul >
-                                            <li class="list_item">
-                                                <a>Up To 94% Off Custom Canvas Prints From Photo.Gifts
-                                                <div class="oval-yellow ml-auto"><span>94% <br>Off</span></div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="card-top">
+                                                    <h5 class="card-title">From Voicedmarket</h5>
+                                                </div>
+                                                <div>
+                                                <h4 class="left">Up To 94% Off Custom Canvas Prints From Photo.Gifts</h4>
+                                                <div class="right"><h6 class="yellow-oval">94%<small>Off</small></h6></div>
+                                            </div>
                                             </li>
-                                            <li class="list_item">
-                                                <a>In-Depth SEO Audit For Any Website From SEOPop</a>
-                                                <div class="oval-yellow ml-auto"><span>94% <br>Off</span></div>
+                                            <li class="list-group-item">
+                                                <h4 class="left">In-Depth SEO Audit For Any Website From SEOPop</h4>
+                                                <div class="right"><h6 class="yellow-oval">94%<small>Off</small></h6></div>
                                             </li>
-                                            <li class="list_item">
-                                                <a>Convert More Visitors Into Customers With 12 Months Of Emojics</a>
-                                                <div class="oval-yellow ml-auto"><span>94% <br>Off</span></div>
+                                            <li class="list-group-item">
+                                                <h4 class="left">Convert More Visitors Into Customers With 12 Months Of Emojics</h4>
+                                                <div class="right"><h6 class="yellow-oval">94%<small>Off</small></h6></div>
                                             </li>
-                                            <li class="list_item justify-content">
-                                                <a>Social Proof Your Website With ProveSource (3 Months For The Price Of 1)</a>
-                                                <div class="oval-yellow ml-auto"><span>94% <br>Off</span></div>
+                                            <li class="list-group-item">
+                                                <h4 class="left">Social Proof Your Website With ProveSource (3 Months For The Price Of 1)</h4>
+                                                <div class="right"><h6 class="yellow-oval">94%<small>Off</small></h6></div>
                                             </li>
+                                            <div class="card-footer">
+                                                <a href="" class="show-more">Show more products</a>
+                                            </div>
                                         </ul>
-                                    </div>
+                                    
                                 </div>
-                                <div class="card-footer">
-                                    <a href="" class="show-more">Show more products</a>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
-                </div>
+                
             </div>
         </div>
 
