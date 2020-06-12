@@ -6,7 +6,7 @@ img{
     width: 100%;
 }
 .container{
-    max-width: calc(1140px + 30px);
+    max-width:1240px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -31,6 +31,19 @@ a:hover{
 	content: "";
 	display: table;
 	clear: both;
+}
+@font-face {
+	font-family:Oswald;
+	src: url(/fonts/Oswald-Light.ttf) format("truetype"),
+		 url(/fonts/Oswald-Medium.ttf) format("truetype"),
+		 url(/fonts/Oswald-Regular.ttf) format("truetype");
+}
+@font-face {
+	font-family: MuseoSansCyrl;
+	src:url(/fonts/MuseoSansCyrl-500.ttf) format("truetype"),
+		url(/fonts/MuseoSansCyrl-700.ttf) format("truetype"),
+		url(/fonts/museosanscyrl-300.ttf) format("truetype"),
+		url(/fonts/museosanscyrl-900.ttf) format("truetype");
 }
 .row{
 	display: flex;
@@ -108,7 +121,7 @@ nav.navbar {
 }
 .navbar-expand-md .navbar-nav .nav-link{
 	padding: 0;
-	font-family: 'Museo Sans Cyrl';
+	font-family: 'MuseoSansCyrl', sans-serif;
 	font-size: 13px;
 	font-weight: 500;
 	font-stretch: normal;
@@ -178,7 +191,7 @@ nav.navbar {
 	position: absolute;
 	right:-12px;
 	top: -12px;
-	font-family:' Museo Sans Cyrl';
+	font-family: 'MuseoSansCyrl', sans-serif;
 	font-size: 10px;
 	line-height: normal;
 	border-radius: 7px;
@@ -212,7 +225,7 @@ nav.navbar {
 	border-bottom: solid 1px #e5e5e5;
 }
 .notification-box p{
-	font-family:' Museo Sans Cyrl' ;
+	font-family: 'MuseoSansCyrl', sans-serif ;
 	font-size: 12px;
 	font-weight: 300;
 	font-stretch: normal;
@@ -253,17 +266,16 @@ nav.navbar {
 }
 .leftcolumn {   
 	float: left;
-	width: 23%;
+	width: 24%;
 }
 .middlecolumn{
-	width: 53%;
+	width: 57%;
 	margin: 0 11px;
 }
 .rightcolumn {
 	float: left;
-	width: 23%;
+	width: 26%;
 }
-
 .card{
 	border-radius: 3px;
 	border: solid 1px #e5e5e5;
@@ -274,7 +286,7 @@ nav.navbar {
 	padding: 15px 15px 0;
   }
   h5.card-title{
-	font-family:' Museo Sans Cyrl';
+	font-family: 'MuseoSansCyrl', sans-serif;
 	font-size: 12px;
 	font-weight: bold;
 	font-stretch: normal;
@@ -295,7 +307,7 @@ nav.navbar {
 	margin-right: 20px;
   }
 	.show-more{
-	font-family: 'Museo Sans Cyrl';
+	font-family:'MuseoSansCyrl', sans-serif;
 	font-size: 12px;
 	font-weight: 300;
 	font-stretch: normal;
@@ -312,7 +324,7 @@ nav.navbar {
 	border-top: solid 1px #e5e5e5;
 }
   .card .topics-wrap ul li a{
-	font-family: 'Museo Sans Cyrl';
+	font-family: 'MuseoSansCyrl', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	font-stretch: normal;
@@ -331,8 +343,8 @@ nav.navbar {
 	  align-items: center;
   }
  
-.h6{
-	font-family: 'Museo Sans Cyrl';
+h6{
+	font-family:'MuseoSansCyrl', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	font-stretch: normal;
@@ -360,7 +372,7 @@ nav.navbar {
 	text-align: center;
 }
 .card button { 
-	font-family: 'Museo Sans Cyrl';
+	font-family:'Museo Sans Cyrl', sans-serif;
 	font-size: 10px;
 	font-weight: 300;
 	font-stretch: normal;
@@ -369,22 +381,21 @@ nav.navbar {
 	letter-spacing: 0.14px;
 	
 }
-.product-card .yellow-oval{
-	max-width: 30px;
-	max-height: 30px;
+.yellow-oval{
+	display: flex;
+	flex-wrap: wrap;
 	border-radius: 50%;
-	padding: 14px;
 	border: solid 1px #feb505;
 	background-color: #feb505;
-}
-.list-group-item{
 	justify-content: center;
+	color: #ffffff;
 }
-
-.list-group:last-child{
+.card .list-group-item:last-child{
 	border-bottom: none;
 }
-.product h6{
+.product-card h6{
+	width: 30px;
+	height: 30px;
 	font-family: 'Poppins', sans-serif;
 	font-size: 10px;
 	font-weight: 500;
@@ -392,19 +403,30 @@ nav.navbar {
 	font-style: normal;
 	line-height: normal;
 	letter-spacing: 0.04px;
-	text-align: center;
-	color: #ffffff;
+	padding: 1px;
 }
 .list-group-item {
-    padding: 15px 15px;
+	padding: 15px 15px;
+	margin: 0;
+	border: 0;
+	border-radius: 3px;
+	border-bottom: solid 1px #e5e5e5;;
+}
+.card .product-card ul li {
+    margin-top: 0; 
+    margin-bottom: 0; 
 }
 .product-card .left{
 	width: 86%;
 	float: left;
+	padding-right: 10px;
 }
 .product-card .right{
-	width: 8%;
+	width: 12%;
 	float: left;
+}
+.product-card h5.card-title{
+	margin-bottom: 0;
 }
 .product-card h4 {
 	font-family: 'Poppins', sans-serif;
@@ -416,13 +438,118 @@ nav.navbar {
 	letter-spacing: 0.09px;
 	color: #000000;
 }	
-.product-card .card-top{
+.form-box .form-control {
+	height: 50px;
+	border: solid 1px rgba(102, 135, 249, 0.29);
+	background-color: #ffffff;
+    box-shadow: none;
+    width: 100% !important;
+}
+.form-box{
+	position: relative;
+	width: 100%;
+	padding: 15px 0;
+}
+.post-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+img.profile-photo-md {
+    height:45px;
+    width: 45px;
+}
+.list-group .post-content .post-detail {
+    margin-left: 10px;
+    position: relative;
+}
+.post-detail p{
+	font-family: 'MuseoSansCyrl', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 0.31px;
+	color: #848b9a;
+}
+h4 .profile-link{
+	color: #0a1735 !important;
+	font-family: 'MuseoSansCyrl', sans-serif;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 0.36px;
+}
+
+.post-detail span.text-muted{
+	font-weight: 300;
+	color: #848b9a !important;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.post-content .post-detail .user-info img.more-icon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 4px;
+}
+ .post-detail .post-text p{
+	line-height: 1.71;
+	letter-spacing: 0.2px;
+	color: #0a1735;
+	margin-top: 10px;
+ }
+.post-detail .reaction a img {
+	width: 18px;
+	height: 16px;
+	margin-right: 15px;
+}
+.post-detail .reaction a.text-comment img {
+	width: 17px;
+	height: 16px;
+}
+.post-detail .reaction a.text-share img {
+	width: 21px;
+	height: 16px;
+}
+.post-content .post-detail .reaction a{
+	font-family: 'MuseoSansCyrl', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 0.26px;
+	color: #848b9a;
 	padding: 0;
-	float: left;
+	padding-right: 30px;
+	display: inline;
 }
-.product-card .card-footer{
-	border-radius: 3px;
-	border: solid 1px #e5e5e5;
+.post-detail .reaction{
+	margin-top: 16px;
 }
-
-
+p.text-muted.post{
+	font-size: 10px;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 0.19px;
+	color: #848b9a !important;
+}
+p.share-post.post img{
+	width: 13px;
+	height: 10px;
+	margin-right: 7px;
+}
+p.share-post.text-muted.post{
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 0.27px;
+	color: #9ea3b3;
+	margin-left: 35px;
+	margin-bottom: 10px;
+}
