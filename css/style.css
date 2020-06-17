@@ -2,14 +2,6 @@
     padding: 0;
     margin: 0;
 }
-img{
-    width: 100%;
-}
-.container{
-    max-width:1240px;
-    margin-right: auto;
-    margin-left: auto;
-}
 html,
 body {
 	-webkit-font-smoothing: antialiased;
@@ -24,32 +16,43 @@ body {
 	overflow-x: hidden;
 	max-width: 2560px;
 }
+img{
+    width: 100%;
+}
+.container{
+	max-width:1170px;
+	padding-left: 10px;
+	padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
 a:hover{
 	text-decoration: none;
 }
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
+
+@font-face {
+	font-family: MuseoSansCyrl-500 ;
+	src:url(./fonts/MuseoSansCyrl-500.ttf) format("truetype");
+		
 }
 @font-face {
-	font-family:Oswald;
-	src: url(/fonts/Oswald-Light.ttf) format("truetype"),
-		 url(/fonts/Oswald-Medium.ttf) format("truetype"),
-		 url(/fonts/Oswald-Regular.ttf) format("truetype");
+	font-family: MuseoSansCyrl-700 ;
+	src:url(./fonts/MuseoSansCyrl-700.ttf) format("truetype");
 }
 @font-face {
-	font-family: MuseoSansCyrl;
-	src:url(/fonts/MuseoSansCyrl-500.ttf) format("truetype"),
-		url(/fonts/MuseoSansCyrl-700.ttf) format("truetype"),
-		url(/fonts/museosanscyrl-300.ttf) format("truetype"),
-		url(/fonts/museosanscyrl-900.ttf) format("truetype");
+	font-family: MuseoSansCyrl-300 ;		
+	src:url(./fonts/museosanscyrl-300.ttf) format("truetype");
 }
-.row{
+@font-face {
+	font-family: MuseoSansCyrl-900 ;
+	src:url(./fonts/museosanscyrl-900.ttf) format("truetype");
+}
+.row{ 
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
+	justify-content: center;
 }
 .header_wrapper{
 	background-color: #ffffff;
@@ -97,16 +100,14 @@ nav .navbar-brand span{
 	line-height: normal;
 	letter-spacing: 2.5px;
 	color: #070707;
-	}
+}
 nav.navbar {
 	padding: 0;
 	padding-top: 8px;
 	padding-bottom: 7px;
 }
 .navbar-expand-md .navbar-nav {
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
+	margin-right: 20px;
 }
 .navbar-brand {
 	width: 131px;
@@ -114,6 +115,10 @@ nav.navbar {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
+}
+.navbar-expand-md .navbar-collapse {
+	display: flex;
+	flex-direction: row-reverse;
 }
 .navbar-nav .nav-item{
 	padding-left: 30px;
@@ -151,10 +156,11 @@ nav.navbar {
 .inner-menu-list img{
 	width: 36px;
 }
-.nav-link .form-control {
+.navbar .form-control {
 	width: 210px;
 	height: 17px;
 	border: none;
+	float: right;
 }
 .form-control {
 	font-size: 14px;
@@ -167,7 +173,8 @@ nav.navbar {
 }
 .dropdown .nav-link{
 	padding: 0;
-	padding-left:8px;
+	display: flex;
+	align-items: center;
 }
 .navbar-nav .nav-link img , .navbar-nav .nav-link .fa{
 	width: 16px;
@@ -256,25 +263,19 @@ nav.navbar {
 	width: 75%;
 	float: left;
 }
-.dropdown.profile-icon a img{
-	width:32px;
-	margin-left: 10px;
-}
+
 .hero-wrapper{
-	float: left;
 	width: 100%;
 }
 .leftcolumn {   
-	float: left;
-	width: 24%;
+	width: 25%;
 }
 .middlecolumn{
 	width: 57%;
 	margin: 0 11px;
 }
 .rightcolumn {
-	float: left;
-	width: 26%;
+	width: 25%;
 }
 .card{
 	border-radius: 3px;
@@ -285,7 +286,7 @@ nav.navbar {
 .card-top{
 	padding: 15px 15px 0;
   }
-  h5.card-title{
+h5.card-title{
 	font-family: 'MuseoSansCyrl', sans-serif;
 	font-size: 12px;
 	font-weight: bold;
@@ -295,18 +296,18 @@ nav.navbar {
 	letter-spacing: 0.23px;
 	color: #000000;
 	text-transform: uppercase;
-  }
-  .card .card-title{
-	  margin-bottom: 15px;
-  }
-  .card .topics-wrap ul li img{
+}
+.card .card-title{
+	margin-bottom: 15px;
+}
+.card .topics-wrap ul li img{
 	width: 20px;
 	height: 20px;
 	object-fit: contain;
 	color: #2c54e0;
 	margin-right: 20px;
-  }
-	.show-more{
+}
+.show-more{
 	font-family:'MuseoSansCyrl', sans-serif;
 	font-size: 12px;
 	font-weight: 300;
@@ -315,7 +316,7 @@ nav.navbar {
 	line-height: normal;
 	letter-spacing: 0.23px;
 	color: #848b9a;
-  }
+}
 .card-footer{
 	text-align: center;
 	padding: 13px 20px 15px;
@@ -323,7 +324,7 @@ nav.navbar {
 	border-radius: 3px;
 	border-top: solid 1px #e5e5e5;
 }
-  .card .topics-wrap ul li a{
+.card .topics-wrap ul li a{
 	font-family: 'MuseoSansCyrl', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
@@ -332,17 +333,15 @@ nav.navbar {
 	line-height: normal;
 	letter-spacing: 0.3px;
 	color: #2c54e0;
-  }
-  .card ul li{
-	  margin-top: 5px;
-	  margin-bottom: 20px;
-	  text-align: left;
-  }
-  .card ul{
-	  list-style: none;
-	  align-items: center;
-  }
- 
+}
+.card ul li{
+	margin-top: 5px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.card ul{
+	list-style: none;
+}
 h6{
 	font-family:'MuseoSansCyrl', sans-serif;
 	font-size: 14px;
@@ -553,3 +552,112 @@ p.share-post.text-muted.post{
 	margin-left: 35px;
 	margin-bottom: 10px;
 }
+.user-info h4.title{
+	display: flex;
+}
+.dropdown-toggle::after {
+	color: #000000;
+}
+.dropdown .bord {
+	position: relative;
+	margin:0;
+	height: 32px;
+	width: 32px;
+   }
+  .circle_clor {
+	position: absolute;
+	left: -10px;
+	top: -10px;
+	width: 64px;
+	height: 64px;
+  }
+  .circle_clor svg {
+	width: 100%;
+	height: 100%;
+  }
+  .circle_clor circle {
+	stroke-width: 5;
+	stroke-dasharray: 120, 20;
+	fill: none;
+	stroke: orange;
+  }
+@media(max-width: 767px){
+	.row{
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	.leftcolumn {   
+		width: 100%;
+	}
+	.middlecolumn{
+		width: 100%;
+		margin: 0;
+	}
+	.rightcolumn {
+		width: 100%;
+	}
+	.card ul li {
+		margin-top: 2px;
+		margin-bottom: 10px;
+	}
+	.post-detail .reaction a img {
+		margin-right: 8px;
+	}
+	.user-info h4.title{
+		display: inline;
+	}
+	.post-detail span.text-muted {
+		margin-left: 0;
+		margin-right: 8px;
+	}
+	.post-content .post-detail .reaction a {
+		padding-right: 20px;
+	}
+	.post-detail .reaction {
+		margin-top: 10px;
+	}
+	.post-detail p {
+		font-size: 13px;
+	}
+	.post-detail .post-text p {
+		margin-top: 8px;
+	}
+	.card .topics-wrap ul li a {
+		font-size: 14px;
+	}
+	.navbar-expand-md .navbar-collapse {
+		display: flex;
+		flex-direction: column;
+	}	
+	.collapse:not(.show) {
+		display: none;
+	}
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.container{
+		max-width:800px;
+	}
+	.row{
+		flex-wrap: wrap;
+	}
+	.leftcolumn {   
+		width: 28%;
+	}
+	.middlecolumn{
+		width: 68%;
+		margin: 0;
+	}
+	.rightcolumn {
+		width: 100%;
+	}
+}
+@media(min-width: 992px) and (max-width: 1024){
+	nav.navbar {
+		padding-left:10px;
+		padding-right: 10px;
+	}
+		
+	
+}
+
+

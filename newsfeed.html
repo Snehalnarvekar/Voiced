@@ -3,7 +3,7 @@
 	<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Voiced</title>
+        <title>Voiced| News Feed </title>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"> 
         <!-- <link href="//db.onlinewebfonts.com/c/03fb56501793dc7f72a44b15e84c716c?family=Museo+Sans+Cyrl+300" rel="stylesheet" type="text/css"/> -->
         <link href="//db.onlinewebfonts.com/c/9897812c6013649bd7a0c3d2efb4c834?family=HK+Grotesk" rel="stylesheet" type="text/css"/>    
@@ -17,7 +17,7 @@
     <body>
         <div class="header_wrapper menu_wrap"> 
             <div class="container">
-                <nav class="navbar navbar-expand-md">
+                <nav class="navbar navbar-expand-md ">
                     <a class="navbar-brand" href="#">
                     <h4>
                         VOICED<sup>®</sup>
@@ -25,54 +25,46 @@
                         <span class="voice-matter">
                         EVERY VOICE MATTERS<sup>®</sup></span>
                     </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class=" navbar-collapse collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto align-items-center">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <form class="form-inline" action="">
-                                            <input class="form-control form-control-sm" type="text" placeholder="Search voiced" aria-label="Search">
-                                            <img src="images/search.svg" class="Search">
-                                        </form>
-                                    </a>    
-                                </li>
-                                <li class="nav-item">  
-                                    <a class="nav-link" href="#">
-                                        <i class="fa fa-plus"></i>Create Story
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><img src="images/news.svg" class="news">
-                                        Newsfeed</a> 
-                                </li>  
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src="images/notif.svg" class="Notif">
-                                        <span class="badge">16</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                            <div class="card-top">
-                                                <h5 class="card-title">Notifications</h5>
-                                            </div>
-                                        <li class="notification-box">
-                                            <div class="row">
-                                              <div class="left">
-                                                <img src="images/like.svg" alt="voiced" class="bg-primary">
-                                              </div>    
-                                              <div class="right">
-                                                <p>
-                                                5 new likes on your story<bold class="text"><q>36 Ways You Know You’re a True Tennessean</q></bold>
-                                                </p>
-                                                <p class="check_out"><a> Check it now</a></p>
-                                              </div>    
-                                            </div>
-                                        </li>
-                                        <li class="notification-box">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class=" navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav navbar-right">
+                            <li class="nav-item">  
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-plus"></i>Create Story
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="images/news.svg" class="news">
+                                    Newsfeed</a> 
+                            </li>  
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/notif.svg" class="Notif">
+                                    <span class="badge">16</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                        <div class="card-top">
+                                            <h5 class="card-title">Notifications</h5>
+                                        </div>
+                                    <li class="notification-box">
                                         <div class="row">
                                             <div class="left">
-                                            <img src="./images/png/avatar.png" alt="voiced" >
+                                            <img src="images/notif_like.svg" alt="voiced" class="bg-primary">
+                                            </div>    
+                                            <div class="right">
+                                            <p>
+                                            5 new likes on your story<bold class="text"><q>36 Ways You Know You’re a True Tennessean</q></bold>
+                                            </p>
+                                            <p class="check_out"><a> Check it now</a></p>
+                                            </div>    
+                                        </div>
+                                    </li>
+                                    <li class="notification-box">
+                                        <div class="row">
+                                            <div class="left">
+                                            <img src="./images/notif-avatar.png" alt="voiced" >
                                             </div>    
                                             <div class="right">
                                             <p>
@@ -81,11 +73,11 @@
                                             </p>
                                             </div>    
                                         </div>
-                                        </li>
-                                        <li class="notification-box">
+                                    </li>
+                                    <li class="notification-box">
                                         <div class="row">
                                             <div class="left">
-                                            <img src="./images/png/avatar-copy.png" alt="voiced">
+                                            <img src="./images/notif avatar1.png" alt="voiced">
                                             </div>    
                                             <div class="right">
                                             <p>
@@ -94,22 +86,27 @@
                                             <p class="check_out"><a>Follow back</a></p>
                                             </div>    
                                         </div>
-                                        </li>
-                                        <li class="card-footer">
-                                        <a href="" class="show-more">Show all notifications</a>
-                                        </li>
-                                    </ul>
-
-                                </li>           
-                            </ul>
-                            <div class="dropdown profile-icon">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="images/avatar.png" alt="">
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                </div>
+                                    </li>
+                                    <li class="card-footer">
+                                    <a href="" class="show-more">Show all notifications</a>
+                                    </li>
+                                </ul>
+                            </li>           
+                        </ul>
+                        <form class="form-inline" action="">
+                            <input class="form-control form-control-sm" type="text" placeholder="Search voiced" aria-label="Search">
+                            <img src="images/search.svg" class="Search">
+                        </form>
+                    </div>
+                    <div class="dropdown profile-icon">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="bord">
+                                <img src="images/avatar.png" alt="voiced profile">
                             </div>
-                        </div>                     
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        </div>
+                    </div>                     
                 </nav>
             </div> 
         </div>
@@ -208,7 +205,7 @@
                                     <img src="images/avatar.png" alt="voiced profile" class="profile-photo-md pull-left">
                                     <div class=" post-detail">
                                         <div class="user-info">
-                                            <h4 class="d-flex"><a href="" class="profile-link">Lauren Kay</a>
+                                            <h4 class="title"><a href="" class="profile-link">Lauren Kay</a>
                                             <p>
                                                 <span class="text-muted">published</span>
                                                 22 Aug</p>
@@ -243,7 +240,7 @@
                                         <img src="images/user-1.png" alt="voiced profile" class="profile-photo-md pull-left">
                                         <div class=" post-detail">
                                             <div class="user-info">
-                                                <h4 class="d-flex"><a href="" class="profile-link">Lynsey Free</a>
+                                                <h4 class="title"><a href="" class="profile-link">Lynsey Free</a>
                                                 <p>
                                                     <span class="text-muted">commented</span>
                                                     21 Aug</p>
@@ -275,13 +272,13 @@
                                 </li>
                                 <li class="list-group-item">
                                     <p class="share-post text-muted post">
-                                        <img src="images/reply.svg" alt="voiced icon">Lauren Kay shared
+                                        <img src="images/reply_1.svg" alt="voiced icon">Lauren Kay shared
                                     </p>
                                     <div class="post-content ">
                                         <img src="images/user-2.png" alt="voiced profile" class="profile-photo-md pull-left">
                                         <div class=" post-detail">
                                             <div class="user-info">
-                                                <h4 class="d-flex"><a href="" class="profile-link">Sam Smith</a>
+                                                <h4 class="title"><a href="" class="profile-link">Sam Smith</a>
                                                 <p>
                                                     <span class="text-muted">shared</span>
                                                     21 Aug</p>
@@ -317,7 +314,7 @@
                                         <div class=" post-detail">
                                             <div class="user-info">
                                                 
-                                                <h4 class="d-flex"><a href="" class="profile-link">Lauren Kay</a>
+                                                <h4 class="title"><a href="" class="profile-link">Lauren Kay</a>
                                                 <p>
                                                     <span class="text-muted">published</span>
                                                     22 Aug</p>
