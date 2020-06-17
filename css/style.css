@@ -29,23 +29,34 @@ img{
 a:hover{
 	text-decoration: none;
 }
-
 @font-face {
-	font-family: MuseoSansCyrl-500 ;
-	src:url(./fonts/MuseoSansCyrl-500.ttf) format("truetype");
-		
+	font-family:HKGrotesk;
+	src: url('../fonts/HKGrotesk-Bold.otf') format('opentype');
+}	
+@font-face {
+	font-family: MuseoSansCyrl;
+	src:url('../fonts/museosanscyrl_500.ttf') format('truetype');
+	font-weight: 500;
 }
 @font-face {
-	font-family: MuseoSansCyrl-700 ;
-	src:url(./fonts/MuseoSansCyrl-700.ttf) format("truetype");
+	font-family: Museo Sans Cyrl;
+	src:url('../fonts/MuseoSansCyrl_1.otf') format('opentype');
+	font-weight: 500;
 }
 @font-face {
-	font-family: MuseoSansCyrl-300 ;		
-	src:url(./fonts/museosanscyrl-300.ttf) format("truetype");
+	font-family: Museo Sans Cyrl;
+	src:url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+	font-weight: 700, bold;
 }
 @font-face {
-	font-family: MuseoSansCyrl-900 ;
-	src:url(./fonts/museosanscyrl-900.ttf) format("truetype");
+	font-family: Museo Sans Cyrl;		
+	src:url('../fonts/museosanscyrl-300.ttf') format('truetype');
+	font-weight: 300;
+}
+@font-face {
+	font-family: MuseoSansCyrl;
+	src:url('../fonts/museosanscyrl-900.ttf') format('truetype');
+	font-weight: 900;
 }
 .row{ 
 	display: flex;
@@ -76,7 +87,7 @@ nav .navbar-brand sup{
 	height: 7px;
 	top: -15px;
     right: 0;
-	font-family:'HK Grotesk';
+	font-family:HKGrotesk;
 	font-size: 6px;
 	font-weight: 600;
 	font-stretch: normal;
@@ -120,13 +131,17 @@ nav.navbar {
 	display: flex;
 	flex-direction: row-reverse;
 }
+.navbar-light .navbar-toggler {
+    color: #000000;
+    border:none ;
+}
 .navbar-nav .nav-item{
 	padding-left: 30px;
 	position: relative;
 }
 .navbar-expand-md .navbar-nav .nav-link{
 	padding: 0;
-	font-family: 'MuseoSansCyrl', sans-serif;
+	font-family: Museo Sans Cyrl;
 	font-size: 13px;
 	font-weight: 500;
 	font-stretch: normal;
@@ -163,6 +178,7 @@ nav.navbar {
 	float: right;
 }
 .form-control {
+	font-family: Museo Sans Cyrl;
 	font-size: 14px;
 	font-weight: 300;
 	font-stretch: normal;
@@ -171,7 +187,8 @@ nav.navbar {
 	letter-spacing: 0.26px;
 	color: #848b9a;
 }
-.dropdown .nav-link{
+.dropdown .dropdown-toggle {
+	position: relative;
 	padding: 0;
 	display: flex;
 	align-items: center;
@@ -198,7 +215,8 @@ nav.navbar {
 	position: absolute;
 	right:-12px;
 	top: -12px;
-	font-family: 'MuseoSansCyrl', sans-serif;
+	font-family:MuseoSansCyrl;
+	font-weight: 500;
 	font-size: 10px;
 	line-height: normal;
 	border-radius: 7px;
@@ -232,7 +250,7 @@ nav.navbar {
 	border-bottom: solid 1px #e5e5e5;
 }
 .notification-box p{
-	font-family: 'MuseoSansCyrl', sans-serif ;
+	font-family: Museo Sans Cyrl ;
 	font-size: 12px;
 	font-weight: 300;
 	font-stretch: normal;
@@ -243,6 +261,17 @@ nav.navbar {
 }
 .notification-box p .text{
 	font-weight: 500;
+}
+.notification-box p.check_out {
+	font-family: Museo Sans Cyrl ;
+	font-size: 12px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.33;
+	letter-spacing: 0.17px;
+	color: #2c54e0;
+	margin-top: 4px;
 }
 .notification-box .left img.bg-primary{
 	width: 36px;
@@ -287,7 +316,7 @@ nav.navbar {
 	padding: 15px 15px 0;
   }
 h5.card-title{
-	font-family: 'MuseoSansCyrl', sans-serif;
+	font-family: Museo Sans Cyrl;
 	font-size: 12px;
 	font-weight: bold;
 	font-stretch: normal;
@@ -308,7 +337,7 @@ h5.card-title{
 	margin-right: 20px;
 }
 .show-more{
-	font-family:'MuseoSansCyrl', sans-serif;
+	font-family:Museo Sans Cyrl;
 	font-size: 12px;
 	font-weight: 300;
 	font-stretch: normal;
@@ -325,7 +354,7 @@ h5.card-title{
 	border-top: solid 1px #e5e5e5;
 }
 .card .topics-wrap ul li a{
-	font-family: 'MuseoSansCyrl', sans-serif;
+	font-family: Museo Sans Cyrl;
 	font-size: 16px;
 	font-weight: 500;
 	font-stretch: normal;
@@ -343,7 +372,7 @@ h5.card-title{
 	list-style: none;
 }
 h6{
-	font-family:'MuseoSansCyrl', sans-serif;
+	font-family:Museo Sans Cyrl;
 	font-size: 14px;
 	font-weight: bold;
 	font-stretch: normal;
@@ -371,7 +400,7 @@ h6{
 	text-align: center;
 }
 .card button { 
-	font-family:'Museo Sans Cyrl', sans-serif;
+	font-family:Museo Sans Cyrl;
 	font-size: 10px;
 	font-weight: 300;
 	font-stretch: normal;
@@ -404,6 +433,15 @@ h6{
 	letter-spacing: 0.04px;
 	padding: 1px;
 }
+.product-card h6 small {
+	font-family: 'Poppins', sans-serif;
+	font-size: 8px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 0.03px;
+}	
 .list-group-item {
 	padding: 15px 15px;
 	margin: 0;
@@ -462,7 +500,7 @@ img.profile-photo-md {
     position: relative;
 }
 .post-detail p{
-	font-family: 'MuseoSansCyrl', sans-serif;
+	font-family: MuseoSansCyrl;
 	font-size: 14px;
 	font-weight: 500;
 	font-stretch: normal;
@@ -470,10 +508,11 @@ img.profile-photo-md {
 	line-height: normal;
 	letter-spacing: 0.31px;
 	color: #848b9a;
+	padding-top: 2px;
 }
 h4 .profile-link{
 	color: #0a1735 !important;
-	font-family: 'MuseoSansCyrl', sans-serif;
+	font-family: Museo Sans Cyrl;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: normal;
@@ -515,7 +554,7 @@ h4 .profile-link{
 	height: 16px;
 }
 .post-content .post-detail .reaction a{
-	font-family: 'MuseoSansCyrl', sans-serif;
+	font-family: MuseoSansCyrl;
 	font-size: 14px;
 	font-weight: 500;
 	font-stretch: normal;
@@ -527,10 +566,14 @@ h4 .profile-link{
 	padding-right: 30px;
 	display: inline;
 }
+.post-content .post-detail .reaction a.text-like{
+ color:#e55e45; ;
+}
 .post-detail .reaction{
 	margin-top: 16px;
 }
 p.text-muted.post{
+	font-family: MuseoSansCyrl;
 	font-size: 10px;
 	font-weight: 300;
 	font-stretch: normal;
@@ -582,6 +625,14 @@ p.share-post.text-muted.post{
 	stroke: orange;
   }
 @media(max-width: 767px){
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.navbar-expand-md .navbar-collapse {
+		display: flex;
+		flex-direction: unset;
+	}
 	.row{
 		flex-wrap: wrap;
 		margin: 0 auto;
@@ -640,16 +691,25 @@ p.share-post.text-muted.post{
 	.row{
 		flex-wrap: wrap;
 	}
+	.card ul li {
+		margin-bottom: 10px;
+	}
 	.leftcolumn {   
-		width: 28%;
+		width: 26%;
 	}
 	.middlecolumn{
-		width: 68%;
+		width: 74%;
 		margin: 0;
 	}
 	.rightcolumn {
 		width: 100%;
 	}
+	.navbar-toggle {
+		display: none;
+	}
+	.card .topics-wrap ul li a {
+		font-size: 15px;
+	}	
 }
 @media(min-width: 992px) and (max-width: 1024){
 	nav.navbar {
