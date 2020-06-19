@@ -67,14 +67,17 @@ a:hover{
 }
 .header_wrapper{
 	background-color: #ffffff;
-	position: relative;
+	position: fixed;
 	border-bottom: solid 1px #e5e5e5;
-	margin-bottom: 15px;
+	width: 100%;
+	z-index: 1;
 }
 .container_wrap{
 	display: flex;
 	align-items: center;
-	width: 100%;
+}
+.page-contents{
+	padding-top: 80px;
 }
 nav .navbar-brand h4{
 	font-family: 'Oswald', sans-serif;
