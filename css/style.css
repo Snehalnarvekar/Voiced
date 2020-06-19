@@ -71,6 +71,11 @@ a:hover{
 	border-bottom: solid 1px #e5e5e5;
 	margin-bottom: 15px;
 }
+.container_wrap{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
 nav .navbar-brand h4{
 	font-family: 'Oswald', sans-serif;
 	font-size: 22px;
@@ -113,9 +118,13 @@ nav .navbar-brand span{
 	color: #070707;
 }
 nav.navbar {
+	width: 95%;
 	padding: 0;
 	padding-top: 8px;
 	padding-bottom: 7px;
+}
+.profile-icon{
+	width: 5%;
 }
 .navbar-expand-md .navbar-nav {
 	margin-right: 20px;
@@ -164,10 +173,6 @@ nav.navbar {
     align-items: center;
     justify-content: center;
 }
-.menu_wrap {
-    position: relative;
-    z-index: 4;
-}
 .inner-menu-list img{
 	width: 36px;
 }
@@ -175,6 +180,7 @@ nav.navbar {
 	width: 210px;
 	height: 17px;
 	border: none;
+	box-shadow: none;
 	float: right;
 }
 .form-control {
@@ -188,7 +194,6 @@ nav.navbar {
 	color: #848b9a;
 }
 .dropdown .dropdown-toggle {
-	position: relative;
 	padding: 0;
 	display: flex;
 	align-items: center;
@@ -272,6 +277,7 @@ nav.navbar {
 	letter-spacing: 0.17px;
 	color: #2c54e0;
 	margin-top: 4px;
+	cursor: pointer;
 }
 .notification-box .left img.bg-primary{
 	width: 36px;
@@ -292,7 +298,23 @@ nav.navbar {
 	width: 75%;
 	float: left;
 }
-
+.dropdown-toggle::after {
+	color: #0a1735;
+	margin-left: 7px;
+}
+ .profile-icon-wrap {
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/oval-background.svg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 4px;
+}
+.profile-icon img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
 .hero-wrapper{
 	width: 100%;
 }
@@ -598,32 +620,8 @@ p.share-post.text-muted.post{
 .user-info h4.title{
 	display: flex;
 }
-.dropdown-toggle::after {
-	color: #000000;
-}
-.dropdown .bord {
-	position: relative;
-	margin:0;
-	height: 32px;
-	width: 32px;
-   }
-  .circle_clor {
-	position: absolute;
-	left: -10px;
-	top: -10px;
-	width: 64px;
-	height: 64px;
-  }
-  .circle_clor svg {
-	width: 100%;
-	height: 100%;
-  }
-  .circle_clor circle {
-	stroke-width: 5;
-	stroke-dasharray: 120, 20;
-	fill: none;
-	stroke: orange;
-  }
+
+
 @media(max-width: 767px){
 	.navbar-expand-md .navbar-nav .nav-link {
 		padding-top: 10px;
@@ -719,5 +717,4 @@ p.share-post.text-muted.post{
 		
 	
 }
-
 
