@@ -142,6 +142,7 @@ a{
 	padding-right: 30px;
 }
 ul.button_menu{
+	order: 2;
 	padding: 0;
 	display: flex;
 	align-items: center;     
@@ -679,6 +680,7 @@ p.share-post.text-muted.post{
 		width: 100%;
 	}
 	ul.button_menu {
+		order: 0;
 		justify-content: flex-end;
 	}
 	.row{
@@ -729,7 +731,7 @@ p.share-post.text-muted.post{
 		font-size: 14px;
 	}
 }
-@media(min-width: 768px) and (max-width:1024px){
+	@media(min-width: 768px) and (max-width:1024px){
 	li.button.notif {
 		display: none;
 	}
