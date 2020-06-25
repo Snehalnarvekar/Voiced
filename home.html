@@ -14,32 +14,40 @@
     </head>
 
     <body>
-        <div class="header_wrapper menu_wrap"> 
-            <div class="container container_wrap">
-                <nav class="navbar navbar-expand-md navbar-light navbar-fixed-top">
-                    <a class="navbar-brand" href="#">
-                    <h4>
-                        VOICED<sup>®</sup>
-                    </h4>
-                        <span class="voice-matter">
-                        EVERY VOICE MATTERS<sup>®</sup></span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class=" navbar-collapse collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav navbar-right">
-                            <li class="nav-item">  
-                                <a class="nav-link" href="#">
-                                    <i class="fa fa-plus"></i>Create Story
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><img src="images/news.svg" class="news">
-                                    Newsfeed</a> 
-                            </li>  
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="header_wrapper"> 
+            
+            <div class="headerbg navbar navbar-default navbar-fixed-top">
+                <div class="container mobile-flex-wrap">
+                    <div class="logo col-md-3 col-sm-3 mobile-col-3 col-first">
+                        <a href="#">
+                        <h4>
+                            VOICED<sup>®</sup>
+                        </h4>
+                            <span class="voice-matter">
+                            EVERY VOICE MATTERS<sup>®</sup></span>
+                        </a>
+                    </div>
+                    <ul class="menu col-md-8 col-sm-7 mobile-col-3 col-second ">
+                        <li class="item">
+                            <form class="form-inline" action="">
+                                <input class="form-control form-control-sm" type="text" placeholder="Search Voiced" aria-label="Search">
+                                <img src="images/search.svg" class="Search">
+                            </form>
+                        </li>
+                        <li class="item">  
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-plus"></i><span> Create Story</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="nav-link" href="#"><img src="images/news.svg" class="news">
+                               <span>Newsfeed</span></a> 
+                        </li>
+                    </ul>
+                    <ul class="button_menu col-md-1 col-sm-2 mobile-col-3 col-third">  
+                        <li class="button notif">
+                            <div class="dropdown">
+                                <a  class="" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="images/notif.svg" class="Notif">
                                     <span class="badge">16</span>
                                 </a>
@@ -103,27 +111,26 @@
                                     <a href="" class="show-more">Show all notifications</a>
                                     </li>
                                 </ul>
-                            </li>           
-                        </ul>
-                        <form class="form-inline" action="">
-                            <input class="form-control form-control-sm" type="text" placeholder="Search Voiced" aria-label="Search">
-                            <img src="images/search.svg" class="Search">
-                        </form>
-                    </div>               
-                </nav>
-                <div class="dropdown profile-icon">
-                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="profile-icon-wrap">
-                            <img src="images/avatar.png" alt="voiced profile">
-                        </div>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    </div>
-                </div>    
+                            </div>
+                        </li> 
+                        <li class="button profile">
+                            <div class="dropdown profile-icon">
+                                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="profile-icon-wrap">
+                                        <img src="images/avatar.png" alt="voiced profile">
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                </div>
+                            </div> 
+                        </li>               
+                    </ul>             
+                </div>
             </div> 
         </div>
 
         <div class="page-contents">
+            <div id="page-content">
             <div class="container"> 
                 <div class="row">
                     <div class="leftcolumn">
@@ -212,6 +219,7 @@
                                         <input type="text" class="form-control" placeholder="What’s on your mind?">
                                     </div> 
                                 </li>
+                                <div class="post-divider"></div>
                                 <li class="list-group-item">
                                 <div class="post-content ">
                                     <img src="images/avatar.png" alt="voiced profile" class="profile-photo-md pull-left">
@@ -247,6 +255,7 @@
                                     </div>
                                 </div>
                                 </li>
+                                <div class="post-divider"></div>
                                 <li class="list-group-item">
                                     <div class="post-content ">
                                         <img src="images/user-1.png" alt="voiced profile" class="profile-photo-md pull-left">
@@ -265,6 +274,31 @@
                                                     activist, amateur Buddhist philosopher and proud black lab <a href="">#mama </a>!
                                                 </p>
                                             </div>
+                                            <div class="article-content-wrap content-wrapper-hover">
+                                                <div class="article-image">
+                                                    <a href="">
+                                                        <img src="images/" class="">
+                                                    </a>
+                                                </div>
+                                                <div class="inner-article-wrapper">
+                                                    <div class="newsfeed-article-title">
+                                                        <a href="https://voiced.com/2584/its-not-just-a-joke-your-words-matter/">
+                                                          <span>It’s Not ‘Just A Joke’ — Your Words Matter</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="usersPostDesc">
+                                                        <span>
+
+                                                        </span>
+                                                    </div>
+                                                    <div class="usersPostReadMore">
+                                                        <a href="https://voiced.com/2584/its-not-just-a-joke-your-words-matter/">
+                                                            Read more
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
                                             <div class="reaction">
                                                 <a class="btn text-gray">
                                                     <img src="images/like-icon.svg" alt="voiced icon">
@@ -282,6 +316,7 @@
                                         </div>
                                     </div>
                                 </li>
+                                <div class="post-divider"></div>
                                 <li class="list-group-item">
                                     <p class="share-post text-muted post">
                                         <img src="images/reply_1.svg" alt="voiced icon">Lauren Kay shared
@@ -320,6 +355,7 @@
                                         </div>
                                     </div>
                                 </li>
+                                <div class="post-divider"></div>
                                 <li class="list-group-item">
                                     <div class="post-content ">
                                         <img src="images/avatar.png" alt="voiced profile" class="profile-photo-md pull-left">
@@ -357,10 +393,10 @@
                                         </div>
                                     </div>
                                 </li>
+                                <div class="post-divider"></div>
                             </div>
                         </div>
                     </div>
-                    
                     <div class="rightcolumn">
                         <div class="card">
                             <div class="card-top">
@@ -411,20 +447,35 @@
                                     <li class="list-group-item">
                                         <div>
                                             <h4 class="left">Up To 94% Off Custom Canvas Prints From Photo.Gifts</h4>
-                                            <div class="right"><h6 class="yellow-oval">94%<br><small>Off</small></h6></div>
+                                            <div class="right yellow-oval">
+                                                <h6 class="oval-text"><span>94%</span>
+                                                <span class="oval-off">Off</span></h6>
+                                            </div>
                                         </div>
                                     </li>
+                                    <div class="post-divider"></div>
                                     <li class="list-group-item">
                                         <h4 class="left">In-Depth SEO Audit For Any Website From SEOPop</h4>
-                                        <div class="right"><h6 class="yellow-oval">94%<br><small>Off</small></h6></div>
+                                        <div class="right yellow-oval">
+                                            <h6 class="oval-text"><span>94%</span>
+                                            <span class="oval-off">Off</span></h6>
+                                        </div>
                                     </li>
+                                    <div class="post-divider"></div>
                                     <li class="list-group-item">
                                         <h4 class="left">Convert More Visitors Into Customers With 12 Months Of Emojics</h4>
-                                        <div class="right"><h6 class="yellow-oval">94%<br><small>Off</small></h6></div>
+                                        <div class="right yellow-oval">
+                                            <h6 class="oval-text"><span>94%</span>
+                                            <span class="oval-off">Off</span></h6>
+                                        </div>
                                     </li>
+                                    <div class="post-divider"></div>
                                     <li class="list-group-item">
                                         <h4 class="left">Social Proof Your Website With ProveSource (3 Months For The Price Of 1)</h4>
-                                        <div class="right"><h6 class="yellow-oval">94%<br><small>Off</small></h6></div>
+                                        <div class="right yellow-oval">
+                                            <h6 class="oval-text"><span>94%</span>
+                                            <span class="oval-off">Off</span></h6>
+                                        </div>
                                     </li>
                                 </ul>
                                 <div class="card-footer">
@@ -434,6 +485,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
 
